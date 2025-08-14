@@ -1,18 +1,25 @@
-// first thought -> map 
-// TLE Exceeded on the last input where n=2,00,000
 #include<bits/stdc++.h>
 using namespace std;
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     int n;
     cin>>n;
-    unordered_map<int,int> mp;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-        mp[arr[i]]++;
+    vector<int> vec;
+    while(n--){
+        int num;
+        cin>>num;
+        vec.push_back(num);
     }
-    cout<<mp.size();
+    sort(vec.begin(),vec.end());
+    int size=vec.size();
+    int ct=1; // to account for i=0
+    for(int i=0;i<size;i++){
+        if((i!=0) && (vec[i]!=vec[i-1])){
+            ct++;
+        }
+    }
+    cout<<ct;
     return 0;
 }
