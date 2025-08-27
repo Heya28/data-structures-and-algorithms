@@ -3,7 +3,7 @@
 Memory access is faster O(1)
 
 - **v.push_back(el)**;
-- **v[index]** or **v.at(index)** ( slower with bounds checking )
+- **v[index]** or **v.at(index)** ( slower with bounds checking but safer )
 - **v.size()** or **v.capacity()** ( different -> reallocation )
   1. When we do push_back and the vector finds new, bigger block of memory ( usually double the size ) 
   2. copies all existing elements from old to new location
@@ -16,6 +16,7 @@ Memory access is faster O(1)
 
 ### Some Functions:
 - **sort(beg it, end it )** O( NlogN) and is fast
+- **find(beg it, end it, val)** -> returns an iterator to the first occurence if found otherwise returns the end iterator.
 - **binary_sort()**
 
 
