@@ -17,7 +17,7 @@ Memory access is faster O(1)
 ### Some Functions:
 - **sort(beg it, end it )** O( NlogN) and is fast
 - **find(beg it, end it, val)** -> returns an iterator to the first occurence if found otherwise returns the end iterator.
-- **binary_sort()**
+- **binary_search(it beg, it end, val)** returns a boolean.
 
 
 2 How vectors can resize ? 

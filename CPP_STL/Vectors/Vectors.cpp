@@ -81,40 +81,41 @@ that price exists in your dataset.
 // 2. find() used a linear search O(N) complexity. Since, data is sorted, we can search must faster -> BINARY SEARCH O(logN) 
 // In STL, just use binary_search() algorithm from <algorithm header> 
 // binary_search() returns a BOOLEAN!
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    vector<double> prices;
-    prices.reserve(10000);
-    while(true){
-        double el;
-        cin>>el;
-        if(el>0){
-            prices.push_back(el);
-        }else{
-            break;
-        }
-    }
-    for(double i:prices){
-        cout<<i<<" ";
-    }
-    cout<<endl;
-    int size=prices.size();
-    cout<<"Total number of prices recorded is "<<size<<endl;
-    sort(prices.begin(),prices.end());
-    // median price
-    if((size%2==0) && size!=0){ // EDGE CASE 
-        cout<<"Median Price is "<<(prices[size/2]+prices[size/2 -1])/2<<endl;
-    }else{
-        cout<<"Median Price is "<<prices[size/2]<<endl;
-    }
-    double findstock;
-    cout<<"Enter stock to find:"<<flush;
-    cin>>findstock;
-    if(binary_search(prices.begin(),prices.end(),findstock)){
-        cout<<"Stock has been found.";
-    }else{
-        cout<<"Stock was not found.";
-    }
-    return 0;
-}
+// int main(){
+//     ios::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     vector<double> prices;
+//     prices.reserve(10000);
+//     while(true){
+//         double el;
+//         cin>>el;
+//         if(el>0){
+//             prices.push_back(el);
+//         }else{
+//             break;
+//         }
+//     }
+//     for(double i:prices){
+//         cout<<i<<" ";
+//     }
+//     cout<<endl;
+//     int size=prices.size();
+//     cout<<"Total number of prices recorded is "<<size<<endl;
+//     sort(prices.begin(),prices.end());
+//     // median price
+//     if((size%2==0) && size!=0){ // EDGE CASE 
+//         cout<<"Median Price is "<<(prices[size/2]+prices[size/2 -1])/2<<endl;
+//     }else{
+//         cout<<"Median Price is "<<prices[size/2]<<endl;
+//     }
+//     double findstock;
+//     cout<<"Enter stock to find:"<<flush;
+//     cin>>findstock;
+//     if(binary_search(prices.begin(),prices.end(),findstock)){
+//         cout<<"Stock has been found.";
+//     }else{
+//         cout<<"Stock was not found.";
+//     }
+//     return 0;
+// }
+
