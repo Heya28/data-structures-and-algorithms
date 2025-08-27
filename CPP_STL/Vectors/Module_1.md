@@ -1,7 +1,12 @@
 
-### As part of CPP STL:
-Memory access is faster O(1)
+### Module 1: Core Concepts and Sequence Containers
+#### - Part 1: The Basics - push_back(). size, access [], .at(), iteration
+#### - Part 2: Performance - size vs capacity, reserve., reallocation cost
+#### - Part 3: Modification - pop_back(), erase, insert, iterator invalidation
+#### - Part 4: Standard Algorithms - sort, find, binary_search
+### - Part 5: Custom sorting with Lambdas
 
+- Memory access is faster for vectors and great for computer's memory cache as stored in contiguous memory location. O(1)
 - **v.push_back(el)**;
 - **v[index]** or **v.at(index)** ( slower with bounds checking but safer )
 - **v.size()** or **v.capacity()** ( different -> reallocation )
