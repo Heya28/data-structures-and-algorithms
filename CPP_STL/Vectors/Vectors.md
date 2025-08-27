@@ -1,6 +1,5 @@
-...
-# As part of CPP STL:
-...
+
+### As part of CPP STL:
 Memory access is faster O(1)
 
 - v.push_back(el);
@@ -14,9 +13,8 @@ Memory access is faster O(1)
 - v.clear() O(N) Fast since no shifting is required. 
 - v.erase( it ) O(N) : slow 
 - v.insert( it, val) : O(N) very slow
-...
+
 ### Some Functions:
-...
 - sort(beg it, end it ) O( NlogN) and is fast
 - binary_sort()
 
