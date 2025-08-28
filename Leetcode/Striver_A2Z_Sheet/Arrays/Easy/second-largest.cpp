@@ -10,7 +10,7 @@ SC-> O(logn) ( For INTROSORT -> Recursion Stack ) or O(1) excluding the recursiv
 Solution: ( Ensures that duplicates are not counted.)
 ### Key Errors : 
 1. {5,5,5} -> In this situation the loop should break otherwise r becomes -1 and array[-1] is undefined behaviour or garbage value.
-2. Logical Error : If you print in this situation, second largest is array[r] where r==0, this is noyt logically correct. There is no second largest element.
+2. Logical Error : If you print in this situation, second largest is array[r] where r==0, this is not logically correct. There is no second largest element.
 3. Second logical Error: 
 a ) if( r!=0 ){
 cout<<"second largest is..."<<arr[r];
@@ -54,7 +54,7 @@ Edge Cases:
 1. Empty ( In this case, fewer than 2 elements. )
 2. All elements are same. 
 3. Duplicates 
-In case of duplicates, if u just write else if(arr[i]>second_max), then the second duplicate will become equal to second_max.\
+In case of duplicates, if u just write else if(arr[i]>second_max), then the second duplicate will become equal to second_max.
 4. FAILING TO UPDATE SECOND_MAX ONCE MAX IS UPDATED!
 for eg: {5,10} maxx becomes 5 then 10, else if statement is skipped!!!
 5. Do NOT do maxx=arr[0] what if array is EMPTY! 

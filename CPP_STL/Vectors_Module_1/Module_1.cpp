@@ -119,3 +119,53 @@ that price exists in your dataset.
 //     return 0;
 // }
 
+// PART 5
+// Advanced Control and Custom Sorting
+// a list of products, and you want to sort them by price from cheapest to most expensive.
+// struct Products{
+//     string name;
+//     float price;
+// };
+
+// int main(){
+//     ios::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     vector<Products>items={
+//         {"MONITOR",89.3},
+//         {"MOUSE",19.2},
+//         {"SCREENGUARD",20.1}
+//     };
+//     sort(items.begin(),items.end(),[](const Products& a,const Products& b){
+//         return a.price<b.price;
+//     });
+//     return 0;
+// }
+// Problem: Sorting Files by Size
+// You have a list of files, each with a filename and a size in kilobytes (KB). 
+// Your task is to print this list sorted from the largest file to the smallest file.
+// Input:
+// The first line is an integer N, the number of files.
+// The next N lines contain a string filename and an integer size.
+// int main(){
+//     int n;
+//     cin>>n;
+//     struct Files{
+//         string filename;
+//         int size;
+//     };
+//     vector<Files> vec;
+//     while(n--){
+//         Files f;
+//         cin>>f.filename>>f.size;
+//         vec.push_back(f);
+//     }
+//     sort(vec.begin(),vec.end(),[](const Files& f1, const Files& f2){
+//         return f1.size > f2.size;
+//     });
+//     for(Files f:vec){
+//         cout<<f.filename<<" "<<f.size<<endl;
+//     }
+//     return 0;
+// }
+
+// LeaderBoard Problem:

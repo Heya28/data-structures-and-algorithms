@@ -65,6 +65,5 @@ int main(){
         cout<<"Array is not sorted.";
     }
     }
-    
     return 0;
 }
