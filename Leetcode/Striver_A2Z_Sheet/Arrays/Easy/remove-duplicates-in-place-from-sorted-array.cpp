@@ -10,7 +10,7 @@
 // int return_unique(int arr[], int size){
 //     set<int> st;
 //     for(int i=0;i<size;i++){
-//         st.insert(arr[i]);
+//         st.insert(arr[i]); // o(nlogn) is tc of this insert operation. no position as set does not allowe indexing
 //     }
 // // set Does NOT support index based access st[i]
  //   // for(int i=0;i<st.size();i++){
@@ -53,7 +53,7 @@ int main(){
     }else if(size==1){
         cout<<"One element is unique. "<<arr[0];
     }else{
-            for(int j=1;j<size;j++){
+        for(int j=1;j<size;j++){
         if(arr[i]!=arr[j]){
             arr[i+1]=arr[j];
             i++;
