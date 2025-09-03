@@ -51,7 +51,7 @@ int main(){
 //     for(int i=0;i<d;i++){
 //         temparr[i]=nums[i];
 //     }
-//     int start=d; // if d=3, then first three elements = 0, 1, 2 indices so shifting starts at indice=3.
+//     // if d=3, then first three elements = 0, 1, 2 indices so shifting starts at indice=3.
 //     for(int i=d;i<size;i++){
 //         nums[i-d]=nums[i];
 //         if(i>=size-d){
